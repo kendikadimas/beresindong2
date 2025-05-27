@@ -1,17 +1,16 @@
 <template>
   <div class="flex flex-col min-h-screen font-sans">
-    <header class="bg-white shadow-md py-4">
+    <header class="bg-[#344C36] shadow-md py-4">
       <div class="container mx-auto px-4 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <img src="/images/logo.png" alt="Beresindong Logo" class="h-8 w-auto"> <div class="text-xl font-bold text-green-800">BERESINDONG</div>
+        <div class="flex items-center">
+            <div class="text-xl font-bold text-white">BERESIN</div><span class="text-xl font-bold text-[#F9AD19]">DONG</span>
         </div>
-
         <nav class="hidden md:block">
           <ul class="flex space-x-6">
-            <li><a href="#" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Preparing</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Cleaning</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Jadi Mitra</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-green-800 transition-colors duration-300">About Us</a></li>
+            <li><a href="#" class="text-white hover:text-green-800 transition-colors duration-300">Preparing</a></li>
+            <li><a href="#" class="text-white hover:text-green-800 transition-colors duration-300">Cleaning</a></li>
+            <li><a href="#" class="text-white hover:text-green-800 transition-colors duration-300">Jadi Mitra</a></li>
+            <li><a href="#" class="text-white hover:text-green-800 transition-colors duration-300">About Us</a></li>
           </ul>
         </nav>
 
@@ -19,7 +18,10 @@
           <button class="bg-yellow-500 hover:bg-yellow-600 text-green-900 font-semibold py-2 px-4 rounded-full text-sm shadow-md transition-all duration-300">
             Login
           </button>
-          <img src="/images/settings-icon.png" alt="Settings" class="h-6 w-6 cursor-pointer hidden md:block"> </div>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-green-900 font-semibold py-2 px-4 rounded-full text-sm shadow-md transition-all duration-300">
+            Register
+          </button>
+          </div>
 
         <button class="md:hidden text-gray-600 focus:outline-none">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
