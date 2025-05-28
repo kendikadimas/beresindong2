@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-green-800 text-white py-16 md:py-20">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center m-12 mt-15">
         Alur Pemesanan
       </h2>
+  <section class="bg-green-800 text-white py-16 md:py-20">
+    <div class="container mx-auto px-4">
 
         <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 justify-items-center items-start text-center max-w-6xl mx-auto">
             <div class="relative flex flex-col items-center">

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gradient-to-r from-white to-white text-white py-16 md:py-24 overflow-hidden relative">
+  <section class="bg-gradient-to-r from-white to-white text-white py-16 md:py-24 overflow-hidden relative py-10 px-15">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between relative z-10">
       <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp text-black">

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green-800 text-white py-16 md:py-20">
+  <section class="bg-white text-[#344C36] py-16 md:py-20">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
         Testimoni Customer
