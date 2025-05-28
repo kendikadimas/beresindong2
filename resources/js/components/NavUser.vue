@@ -2,13 +2,18 @@
 import UserInfo from '@/components/UserInfo.vue';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from '@/components/ui/sidebar';
-import { type SharedData, type User } from '@/types';
-import { usePage } from '@inertiajs/vue3';
 import { ChevronsUpDown } from 'lucide-vue-next';
 import UserMenuContent from './UserMenuContent.vue';
+import { defineProps, type PropType } from 'vue'; 
 
-const page = usePage<SharedData>();
-const user = page.props.auth.user as User;
+interface Props {
+  user: User | null; // Definisikan prop 'user'
+}
+
+const props = defineProps<Props>();
+const user = props.user; // Gunakan prop 'user' yang diterima
+// const page = usePage<SharedData>();
+// const user = page.props.auth.user as User;
 const { isMobile, state } = useSidebar();
 </script>
 

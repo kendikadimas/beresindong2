@@ -12,7 +12,7 @@
 
 <script>
 // Impor semua komponen yang akan digunakan
-import AppLayout from './layouts/AppLayout.vue';
+import AppLayout from '../layouts/AppLayout.vue';
 import HeroSection from './sections/HeroSection.vue';
 import WhyChooseUs from './sections/WhyChooseUs.vue';
 import ServicesSection from './sections/ServicesSection.vue';

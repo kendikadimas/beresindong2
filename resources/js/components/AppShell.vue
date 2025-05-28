@@ -9,7 +9,8 @@ interface Props {
 
 defineProps<Props>();
 
-const isOpen = usePage<SharedData>().props.sidebarOpen;
+// const isOpen = usePage<SharedData>().props.sidebarOpen;
+const isOpen = false;
 </script>
 
 <template>

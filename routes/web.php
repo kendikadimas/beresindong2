@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome'); // Mengembalikan view Blade bernama 'welcome'
 })->name('home');
 
+Route::get('/repairing', function () {
+    return view('repairing'); // Kita akan membuat file Blade ini
+})->name('repairing');
+
 // Rute-rute lain yang mungkin Anda miliki, contoh:
 // Route::get('/about', function () {
 //     return view('about');

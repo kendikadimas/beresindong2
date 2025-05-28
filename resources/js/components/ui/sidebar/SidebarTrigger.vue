@@ -13,7 +13,7 @@ const { toggleSidebar } = useSidebar()
 </script>
 
 <template>
-  <Button
+  <!-- <Button
     data-sidebar="trigger"
     data-slot="sidebar-trigger"
     variant="ghost"
@@ -23,5 +23,5 @@ const { toggleSidebar } = useSidebar()
   >
     <PanelLeft />
     <span class="sr-only">Toggle Sidebar</span>
-  </Button>
+  </Button> -->
 </template>
