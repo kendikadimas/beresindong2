@@ -2,10 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/register', function () {
+    return view('register'); // Kita akan membuat file Blade ini
+})->name('register');
+
 // Rute untuk menampilkan landing page
 Route::get('/', function () {
     return view('welcome'); // Mengembalikan view Blade bernama 'welcome'
 })->name('home');
+
+
 
 // Rute-rute lain yang mungkin Anda miliki, contoh:
 // Route::get('/about', function () {
