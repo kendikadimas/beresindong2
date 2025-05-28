@@ -34,11 +34,12 @@
         "moduleResolution": "bundler" /* Specify how TypeScript looks up a file from a given module specifier. */,
         // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
         "paths": {
-            /* Specify a set of entries that re-map imports to additional lookup locations. / "@/": ["./resources/js/*"],
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
-        },
-        // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
-        // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
+    // HAPUS KOMENTAR INI
+    // /* Specify a set of entries that re-map imports to additional lookup locations. / "@/": ["./resources/js/*"],
+    // JADI:
+    "@/": ["./resources/js/*"], // Pastikan path ini benar jika Anda pakai alias @/
+    "ziggy-js": ["./vendor/tightenco/ziggy"]
+},                                 /* Specify multiple folders that act like './node_modules/@types'. */
         "types": [
             "vite/client",
             "vue/tsx",
@@ -120,9 +121,9 @@
         "skipLibCheck": true /* Skip type checking all .d.ts files. */
     },
     "include": [
-        "resources/js//*.ts",
-        "resources/js//*.d.ts",
-        "resources/js//*.tsx", 
-        "resources/js//*.vue"
-    ]
+    "resources/js/*.ts", // <--- Ganti resources
+    "resources/js/*.d.ts", // <--- Ganti resources/j
+    "resources/js/*.tsx", // <--- Ganti resources/js
+    "resources/js/*.vue" // <--- Ganti resources/js
+]
 }
