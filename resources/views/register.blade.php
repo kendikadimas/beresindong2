@@ -1,79 +1,50 @@
-<!-- resources/views/auth/register.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - BeresinDong</title>
+    <title>Register - Beresindong</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
-    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md w-full space-y-8">
-            <!-- Header -->
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-900">Berg</h1>
-                <h2 class="mt-2 text-2xl font-semibold text-gray-700">Dong</h2>
-            </div>
-            
-            <!-- Form Container -->
-            <div class="mt-8 bg-white py-8 px-6 shadow rounded-lg">
-                <form class="mt-8 space-y-6">
-                    <div class="rounded-md shadow-sm space-y-4">
-                        <!-- Username Field -->
-                        <div>
-                            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                            <input 
-                                id="username" 
-                                name="username" 
-                                type="text" 
-                                class="mt-1 appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                placeholder="Masukkan username"
-                            >
-                        </div>
-                        
-                        <!-- Email Field -->
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input 
-                                id="email" 
-                                name="email" 
-                                type="email" 
-                                class="mt-1 appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                placeholder="contoh@email.com"
-                            >
-                        </div>
-                        
-                        <!-- Password Field -->
-                        <div>
-                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                            <input 
-                                id="password" 
-                                name="password" 
-                                type="password" 
-                                class="mt-1 appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                placeholder="Password minimal 8 karakter"
-                            >
-                        </div>
-                    </div>
+<body class="min-h-screen flex items-center justify-center bg-[#344C36]">
+    <div class="min-h-screen flex items-center justify-center bg-[#344C36]">
+    <div class="w-full max-w-4xl bg-white shadow-xl flex md:flex-row flex-col overflow-hidden">
 
-                    <!-- Submit Button -->
-                    <div>
-                        <button 
-                            type="button" 
-                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        >
-                            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-                                <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                            Defter
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <!-- Kiri: Gambar -->
+    <div class="md:w-1/2 relative h-full">
+        <img src="/images/pictregist.png" alt="Register picture" class="w-full h-full object-cover md:aspect-[335/376]">
     </div>
+
+    <!-- Kanan: Header + Form -->
+    <div class="md:w-1/2 p-8 flex flex-col justify-center bg-white" style="font-family: 'Poppins', sans-serif;">
+    
+        <!-- Tulisan Pindah ke Atas Form -->
+        <div class="mb-5 flex justify-center ">
+        <h1 class="text-3xl font-bold text-[#344C36]">Beresin<span class="text-yellow-400">Dong</span></h1>
+        </div>
+
+        <!-- Form -->
+        <form class="space-y-5">
+        <div>
+            <label class="block text-sm font-light text-[#344C36]">Username</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-2xl shadow-sm" placeholder="Enter your username" required>
+        </div>
+        <div>
+            <label class="block text-sm font-light text-[#344C36]">Email</label>
+            <input type="email" class="w-full px-3 py-2 border rounded-2xl shadow-sm" placeholder="you@example.com" required>
+        </div>
+        <div>
+            <label class="block text-sm font-light text-[#344C36]">Password</label>
+            <input type="password" class="w-full px-3 py-2 border rounded-2xl shadow-sm" placeholder="Minimum 8 characters" required>
+        </div>
+        <button type="submit" class="w-full py-2 px-4 text-sm font-bold bg-green-800 text-white rounded-2xl hover:bg-green-700 transition duration-300">Daftar</button>
+        </form>
+    </div>
+
+</div>
+</div>
+
 </body>
 </html>
