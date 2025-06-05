@@ -1,23 +1,30 @@
 import './bootstrap';
+import '../css/app.css';
 import { createApp } from 'vue';
-import AppComponent from './components/AppComponent.vue'; // Perhatikan pathnya
+
+// Main App Component
+import App from './App.vue';
+
+// Pages Components
 import RepairingPage from './pages/RepairingPage.vue';
-/* import the fontawesome core */
-import { library } from '@fortawesome/fontawesome-svg-core'
+import RegisterPage from './components/sections/Register.vue';
+import ProfilePage from './pages/ProfilePage.vue';
 
-/* import font awesome icon component */
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// Font Awesome setup
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 
-/* import specific icons */
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+library.add(faUserSecret);
 
-/* add icons to the library */
-library.add(faUserSecret)
+// Create Vue application
+const app = createApp(App);
 
-const app = createApp({});
-
-app.component('font-awesome-icon', FontAwesomeIcon)
-app.component('AppComponent', AppComponent); // Daftarkan komponen global jika ingin menggunakannya di Blade
+// Register global components
+app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('RepairingPage', RepairingPage);
+app.component('RegisterPage', RegisterPage);
+app.component('ProfilePage', ProfilePage);
 
+// Mount the app
 app.mount('#app');
